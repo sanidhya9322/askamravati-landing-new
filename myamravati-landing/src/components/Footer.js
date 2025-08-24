@@ -1,14 +1,8 @@
-import { Link } from "react-router-dom";
-
-export default function Footer() {
-  return (
-    <footer className="bg-gray-100 text-center p-4 mt-6">
-      <p>© 2025 MyAmravati Market</p>
-      <div className="mt-2 space-x-4">
-        <Link to="/terms" className="text-blue-500">Terms & Conditions</Link>
-        <Link to="/refund" className="text-blue-500">Refund Policy</Link>
-        <Link to="/privacy" className="text-blue-500">Privacy Policy</Link>
-      </div>
-    </footer>
-  );
-}
+<footer className="bg-gray-100 py-4 text-center text-sm">
+  <p>© 2025 Ask Amravati. All rights reserved.</p>
+  <div className="mt-2 space-x-4">
+    <a href="/terms" className="text-blue-600 hover:underline">Terms</a>
+    <a href="/privacy" className="text-blue-600 hover:underline">Privacy</a>
+    <a href="/refund" className="text-blue-600 hover:underline">Refund</a>
+  </div>
+</footer>

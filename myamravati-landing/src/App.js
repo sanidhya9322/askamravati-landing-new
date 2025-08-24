@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Terms from "./pages/Terms";
-import Refund from "./pages/Refund";
 import Privacy from "./pages/Privacy";
+import Refund from "./pages/Refund";
+import Home from "./pages/Home"; // your landing page
 
 function App() {
   return (
@@ -26,9 +27,10 @@ function App() {
 
         {/* Routes for legal pages */}
         <Routes>
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/refund" element={<Refund />} />
-          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/" element={<Home />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/refund" element={<Refund />} />
         </Routes>
       </div>
     </Router>
